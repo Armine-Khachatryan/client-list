@@ -1,0 +1,17 @@
+.table {
+  border: 1px solid rgb(218, 210, 210) !important;
+}
+
+.clients {
+  color: blue;
+  border-right: none !important;
+  font-weight: bold;
+  font-size: x-large;
+  text-align: left;
+}
+
+.button {
+  border-left: none !important;
+  display: "flex" !important;
+  justify-content: "flex-end" !important;
+}
