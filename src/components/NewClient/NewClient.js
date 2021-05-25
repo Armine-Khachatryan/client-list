@@ -34,7 +34,7 @@ class NewClient extends Component {
     };
 
     handleSubmit = () => {
-        const {Name, Email, Phone, providers, displayName} = this.state;
+        const {Name, Email, Phone, providers} = this.state;
         let valid = true;
         let nameMessage = null;
         let emailMessage = null;
@@ -85,7 +85,6 @@ class NewClient extends Component {
             displayName
         };
         if (valid) {
-            console.log("NEWCLIENT", newClient);
             this.props.onAdd(newClient);
         }
         const ProvidersComponent = providers.map((provider) => {
@@ -127,7 +126,6 @@ class NewClient extends Component {
 
 
     handleEdit = (editProvider) => {
-        console.log(editProvider)
         this.setState({ editProvider });
     };
 
